@@ -182,9 +182,33 @@ function updateNewsArray() {
   ["Guys, I don't have much time but I just made a revelation Big Number doesn't want you to know. T̶̥͛h̵͕̄e̷̫̓ f̷̽͂i̶͒̎n̷̊̌å̵͐l̵̢̐ d̷́̂ĭ̴́ğ̷̈ī̶̚t̵͊̔ o̴̿̉f̸̀̿ π̵̊͘ ï̶̌s̵̓̀ ██████",true,"a178"], //v2.3
   ["Tuba doesn't know that I've been slightly altering the news messages, changing one letter here and there, to make everything less readable...",true,"a179"], //v2.3
   ['"Alright so we are checking out the only game where your ass gets bumped into timewalls, it\'s Algebraic Progression" -GrayStillPlays',true,"a180"], //v2.3
-  ["Fun Fact: Tuba once accidentally nerfed the Challenge 4 reward, which manifested a 24+ hour timewall before unlocking Root Epicenter. You should be thankful that this was patched.",hasChallenge(5) || player.totali.gte(1),"a181"], //v2.3
   ["Fun Fact: @42UR3ified_Ecolo#4052 was inspired by my Quadratic Formula mechanic and made an adaptation of it in their TMT game! <a href='https://raw.githack.com/new42ur3jeans/Challenge-Tree-Adventure/master/index.html' target='_blank'>Check it out!</a>",hasQU(20) || player.totali.gte(1),"a182"], //v2.3
   
+  //modded tickers
+  ["imagine nerfing the c4 reward lol", hasChallenge(5) || player.totali.gte(1), "a181"], //replaces a181
+  ["Rip AssNog  -alexamop", true, "a183"],
+  ["execute me uwu -Saber", true, "a184"],
+  ["optoo bbusy maying car in avcodioegamwe -skabooskimcnugget", true, "a185"],
+  ["Look, I'm straight, but -skabooskimcnugget", true, "a186"],
+  ["dude hes gay and he gets more girls than you -jake9c", true, "a187"],
+  ["my bisexuality cannot be contained -Saber", true, "a188"],
+  ["We are the rest station -Lionel", true, "a189"],
+  ["This AP mod is dedicated to my boyfriend Lionel.", true, "a190"],
+  ["You've been in a China -Saber", true, "a191"],
+  ["get standard at better -Saber", true, "a192"],
+  ["the mitochondria is the power of the cell", true, "a193"],
+  ["It's really important that you get a big rack", true, "a194"],
+  ["me when -1 briancell", true, "a195"],
+  ["Please disregard any message about eating the synthetic division upgrades. They are in fact, edible." ,player.polynomials[6].bought.gte(1), "a196"],
+  ["YOU MUST CONSTRUCT ADDITIONAL PYLONS", true, "a197"],
+  ["Fun Fact: randomtuba cant code", true, "a198"],
+  ["Congratualations on completing the game 8 times! To win this game, find the indefinite integral of x*e^xdx (This game was truly calculus progression all along!).", player.gamePoints >= 8, "a199"],
+  ["179769313486231590772930519078902473361797697894230657273430081157732675805500963132708477322407536021120113879871393357658789768814416622492847430639474124377767893424865485276302219601246094119453082952085005768838150682342462881473913110540827237163350510684586298239947245938479716304835356329624224137216", true, "a200"],
+  ["What's with these homies, dissing my girl? Why do they gotta front? What did we ever do to these guys that made them so violent?", true, "a201"],
+  ["Woo-Hoo, but you know im yours. Woo-Hoo, and I know you're mine. Woo-Hoo, (and that's for all time)", true, "a202"],
+  ["Ooh-wee-hoo, I look just like Buddy Holly. Oh-oh, and you're Mary Tyler Moore. I don't care what they say about us anyway. I don't care about that", true, "a203"],
+  ["I made this news ticker while drunk at 1AM", true, "a204"],
+
     
   ["<span style='color:red'>So this is how it ends, huh? And it was all your fault.</span>",true,"b1"],
   ["<span style='color:red'>BREAKING NEWS: Pillars of reality crumbling as humanity embraces everlasting despair!</span>",true,"b2"],

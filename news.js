@@ -210,7 +210,7 @@ function updateNewsArray() {
   ["I made this news ticker while drunk at 1AM", true, "a204"],
   ["oh god oh fuck please dont look at my code :(", true, "a205"],
   ["BREAKING NEWS.JS: i forgot to close a bracket", true, "a206"],
-  ["If we know from past experiences that paperclips are useless, amd we know now that tubas are useless, that should mean that 1 paperclip = 1 tuba. Assuming that information is correct, paperclips should be considered an instrument.", ture, "a207"],
+  ["If we know from past experiences that paperclips are useless, amd we know now that tubas are useless, that should mean that 1 paperclip = 1 tuba. Assuming that information is correct, paperclips should be considered an instrument.", true, "a207"],
   ["Mayonnaise is an instrument.", true, "a208"],
   ["DEMEMZEA stole all the eggs lol", true, "a209"],
 

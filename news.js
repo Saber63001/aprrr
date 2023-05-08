@@ -289,10 +289,10 @@ if(!s)return
 function newsSelection() {
   if(player.polynomials[6].bought.gte(1)) {
     let x = Math.random();
-    if(new Decimal(x).lt(player.totalPoints.max(1).log10().div(5e8)) && player.totalPoints.max(1).log10().div(5e8).lt(0.8)) return 182 + (Math.random() * 13);
-    if(new Decimal(x).gt(player.totalPoints.max(1).log10().div(5e8)) && player.totalPoints.max(1).log10().div(5e8).lt(0.8)) return Math.random() * 181;
-    if(player.totalPoints.max(1).log10().div(5e8).gte(0.8)) return 196;
+    if(new Decimal(x).lt(player.totalPoints.max(1).log10().div(5e8)) && player.totalPoints.max(1).log10().div(5e8).lt(0.8)) return 205 + (Math.random() * 13);
+    if(new Decimal(x).gt(player.totalPoints.max(1).log10().div(5e8)) && player.totalPoints.max(1).log10().div(5e8).lt(0.8)) return Math.random() * 204;
+    if(player.totalPoints.max(1).log10().div(5e8).gte(0.8)) return 219;
   } else {
-    return Math.random() * 180;
+    return Math.random() * 203;
   }
 }

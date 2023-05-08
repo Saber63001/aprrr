@@ -331,7 +331,7 @@ function updateAuto() {
   
   // DOUBLERS
   if(player.compAutobuyers[1] && hasQU(16)){
-    if(player.complexes.lt(20)) {
+    if(player.complexes.lt(20)||player.totalGP >= 1) {
       while(player.x2.gte(doublerCost())) buyDoubler()
     } else {
       if(player.x2.lt(hasZlabMilestone(4,1)?"1e500":"1e300") && player.x2.gte(doublerCost)) {
@@ -345,7 +345,7 @@ function updateAuto() {
     }
   }
   if(player.compAutobuyers[3]){
-    if(player.complexes.lt(20)) {
+    if(player.complexes.lt(20)||player.totalGP >= 1) {
       while(player.rootEssence.gte(sqrtDoublerCost())) buySqrtDoubler()
     } else {
       if(player.rootEssence.lt(hasZlabMilestone(4,2)?"1.105e177":"1.577e72") && player.rootEssence.gte(sqrtDoublerCost())) {
@@ -360,7 +360,7 @@ function updateAuto() {
   }
   
   // Y-INTERCEPT
-  if(player.compAutobuyers[4] && hasUpgrade(8) && player.slope.gte(bCost())){
+  if((player.compAutobuyers[4] && hasUpgrade(8) && player.slope.gte(bCost()))||player.totalGP >=1){
     let a = new Decimal(1)
     let b = new Decimal(4)
     let c = new Decimal(23).sub(player.slope.max(1).log10())
@@ -368,7 +368,7 @@ function updateAuto() {
   }
   
   // QP BUYABLES
-  if(player.compAutobuyers[5] && hasQU(20) && player.compChallenge != 9) {
+  if((player.compAutobuyers[5] && hasQU(20) && player.compChallenge != 9)||player.totalGP >=1) {
     for (let i = 1; i < 5; i++) {
       let a = arr1[i].log10()
       let b = arr2[i].log10()
@@ -378,7 +378,7 @@ function updateAuto() {
   }
   
   // AUTO-ADJUST
-  if(player.compAutobuyers[6] && hasQU(20)) {
+  if((player.compAutobuyers[6] && hasQU(20))||player.totalGP >= 1) {
     player.abc[1] = maxABC()
     player.abc[2] = maxABC()
     if(!player.compAutobuyers[11]) player.abc[3] = maxABC().div(4).floor()

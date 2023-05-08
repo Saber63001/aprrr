@@ -44,19 +44,23 @@
   </head>
   <body>
     <div id="loading_page">
-      <h2>Oops, looks like the game isn't loading right!</h2><br>
-      Consider refreshing or asking about it on the <a href="https://discord.gg/HhcavwM5rm" target="_blank">Discord server</a>.
+      <h2>Oops, looks like Saber fucked up and the game isn't loading right! </h2><br>
+      Consider refreshing or DMing Saber#9601 and discord. </a>.
     </div>
     <div id="app">
     <div id="gameWon" v-if="player.gameWon && !tmp.keptGoing">
-      <b style="font-size:25px;">Congratulations! You have beaten the game.</b><br><br>
+      <b style="font-size:25px;">Congratulations! You have beaten the game. </b><br><br>
       You completed the entire game in {{formatTime(player.winTime)}}.<br>
+      Each time you hit "Play again" (Listed below), some QoL options will automatically be enabled for you even if you don't have the milestones/upgrades for them (e.g. x<sup>2</sup>autobuyer without having any complexes).<br>
+      -1 game completion: all pre-complex related QoL (like z<sup>2</sup> autobuyer, autobuyers for QF upgrades, etc.) <br>
+      -2 completions (NI): all complex related QoL <br>
+      -3 completions (NI): all post complex related QoL <br>
       <span v-if="player.gamePoints.lt(player.totalGP)"><br></span><br>
       <button class="tooltip hoverable" onclick="tmp.keptGoing = true; setTimeout(() => { doodooWater(); }, 1);">
         Keep Going <span class="tooltiptext">Continue playing in your current savefile. You will return to this win screen when you refresh the game.</span>
       </button>
       <button class="tooltip hoverable" onclick="playAgain(false)">
-        Play Again <span class="tooltiptext">Reset the entire game, but keep Secret Achievements and Options.</span>
+        Play Again <span class="tooltiptext">Reset the entire game, but keep Secret Achievements and Options as well as enable QoL without needing the requirments.</span>
       </button><br><br>
       <!--- <button class="hoverable" onclick="toggleOption(15)">
         {{player.options[15] ? "Hide Credits" : "Show Credits"}}

@@ -202,12 +202,17 @@ function updateNewsArray() {
   ["Please disregard any message about eating the synthetic division upgrades. They are in fact, edible." ,player.polynomials[6].bought.gte(1), "a196"],
   ["YOU MUST CONSTRUCT ADDITIONAL PYLONS", true, "a197"],
   ["Fun Fact: randomtuba cant code", true, "a198"],
-  ["Congratualations on completing the game 8 times! To win this game, find the indefinite integral of x*e^xdx (This game was truly calculus progression all along!).", player.gamePoints >= 8, "a199"],
+  ["Congratualations on completing the game 8 times! To win this game, find the indefinite integral of xe<sup>x</sup>dx (This game was truly calculus progression all along!).", player.gamePoints >= 8, "a199"],
   ["179769313486231590772930519078902473361797697894230657273430081157732675805500963132708477322407536021120113879871393357658789768814416622492847430639474124377767893424865485276302219601246094119453082952085005768838150682342462881473913110540827237163350510684586298239947245938479716304835356329624224137216", true, "a200"],
   ["What's with these homies, dissing my girl? Why do they gotta front? What did we ever do to these guys that made them so violent?", true, "a201"],
   ["Woo-Hoo, but you know im yours. Woo-Hoo, and I know you're mine. Woo-Hoo, (and that's for all time)", true, "a202"],
   ["Ooh-wee-hoo, I look just like Buddy Holly. Oh-oh, and you're Mary Tyler Moore. I don't care what they say about us anyway. I don't care about that", true, "a203"],
   ["I made this news ticker while drunk at 1AM", true, "a204"],
+  ["oh god oh fuck please dont look at my code :(", true, "a205"],
+  ["BREAKING NEWS.JS: i forgot to close a bracket", true, "a206"],
+  ["If we know from past experiences that paperclips are useless, amd we know now that tubas are useless, that should mean that 1 paperclip = 1 tuba. Assuming that information is correct, paperclips should be considered an instrument.", ture, "a207"],
+  ["Mayonnaise is an instrument.", true, "a208"],
+  ["DEMEMZEA stole all the eggs lol", true, "a209"],
 
     
   ["<span style='color:red'>So this is how it ends, huh? And it was all your fault.</span>",true,"b1"],
@@ -289,10 +294,10 @@ if(!s)return
 function newsSelection() {
   if(player.polynomials[6].bought.gte(1)) {
     let x = Math.random();
-    if(new Decimal(x).lt(player.totalPoints.max(1).log10().div(5e8)) && player.totalPoints.max(1).log10().div(5e8).lt(0.8)) return 205 + (Math.random() * 13);
-    if(new Decimal(x).gt(player.totalPoints.max(1).log10().div(5e8)) && player.totalPoints.max(1).log10().div(5e8).lt(0.8)) return Math.random() * 204;
-    if(player.totalPoints.max(1).log10().div(5e8).gte(0.8)) return 219;
+    if(new Decimal(x).lt(player.totalPoints.max(1).log10().div(5e8)) && player.totalPoints.max(1).log10().div(5e8).lt(0.8)) return 210 + (Math.random() * 13);
+    if(new Decimal(x).gt(player.totalPoints.max(1).log10().div(5e8)) && player.totalPoints.max(1).log10().div(5e8).lt(0.8)) return Math.random() * 209;
+    if(player.totalPoints.max(1).log10().div(5e8).gte(0.8)) return 224;
   } else {
-    return Math.random() * 203;
+    return Math.random() * 208;
   }
 }

@@ -136,6 +136,9 @@
     <span v-if="player.hasCompletedLevel5 && player.x2.lt('1e2950') && player.rootEssence.lt('1e660') && player.totali.lt(1)">
       <span style="color:#229100">You need 1e2950 x<sup>2</sup> and 1e660 Root Essence to go Complex.</span><br><br>
     </span>
+    <span v-if="player.y.gte(2222) && player.z.lt(1)">
+      <span style="color:#e5ff00">Check generation tab!</span><br><br>
+    </span>
     <div id="points">
       Number {{player.compChallenge == 6 && player.buyables[1].add(player.buyables[2]).add(player.buyables[3]).gt(player.buyables[4].add(player.buyables[5]).add(player.buyables[6])) ? "&lt;" : "="}} {{player.z.gte(1) ? formatWhole(player.z) + 'z+' : ''}}{{player.y.gte(1) ? formatWhole(player.y) + 'y+' : ''}}{{player.x.gte(1) ? formatWhole(player.x) + 'x+' : ''}}{{format(player.points)}}  
     </div>
